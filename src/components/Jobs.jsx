@@ -1,29 +1,49 @@
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import {  TabList, TabPanel, Tabs } from "react-tabs";
+import Category from "./Category";
+import JobCards from "./jobcards";
 
 const Jobs = () => {
+    const [categories,setCategories]=useState([])
+  //   const [jobs,setJobs]=useState([])
+
+  //   const params=useParams()
+  //   console.log(params)
+
+  //   const url=`http://localhost:5000/jobs?jobCategory=${params.jobCategory}`
+
+  //   useEffect(()=>{
+  //     fetch(url)
+  //     .then(res=>res.json())
+  //     .then(data=>setJobs(data))
+  // },[url])
+    
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/categories')
+        .then(res=>res.json())
+        .then(data=>setCategories(data))
+    },[])
     return (
         <Tabs>
         <TabList className="flex justify-around ">
-          <Tab className="btn ">Title 1</Tab>
-          <Tab className="btn ">Title 2</Tab>
-          <Tab className="btn ">Title 3</Tab>
-          <Tab className="btn ">Title 4</Tab>
+          
+          {
+            categories.map(category=><Category key={category._id} category={category}></Category>)
+          }
         </TabList>
     
         <TabPanel>
-          <h2>Any content 1</h2>
+          {/* {
+            jobs.map(job=><h2 key={job._id}>ok</h2>)
+          } */}
+            {/* <JobCards></JobCards> */}
         </TabPanel>
-        <TabPanel>
-          <h2>Any content 2</h2>
-        </TabPanel>
-        <TabPanel>
-          <h2>Any content 3</h2>
-        </TabPanel>
-        <TabPanel>
-          <h2>Any content 4</h2>
-        </TabPanel>
+        
       </Tabs>
     );
 };
 
 export default Jobs;
+
