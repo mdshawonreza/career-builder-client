@@ -10,7 +10,7 @@ const MyJobs = () => {
     const [jobs, setJobs] = useState([])
 
 
-    const url = `http://localhost:5000/jobs?email=${user.email}`
+    const url = `http://localhost:5000/jobs?email=${user?.email}`
 
     useEffect(() => {
         fetch(url)

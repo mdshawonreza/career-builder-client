@@ -5,10 +5,14 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AddAJob from "../pages/AddAJob/AddAJob";
-import Category from "../components/Category";
-import JobCards from "../components/jobcards";
 import MyJobs from "../pages/MyJobs/MyJobs";
 import PrivateRoute from "./PrivateRoute";
+import UpdateMyJob from "../components/UpdateMyJob";
+import Blogs from "../pages/Blogs/Blogs";
+import AllJobs from "../pages/AllJobs/AllJobs";
+import AppliedJobs from "../pages/AppliedJobs/AppliedJobs";
+import DetailsJob from "../components/DetailsJob";
+
 
 
 const router = createBrowserRouter([
@@ -19,7 +23,8 @@ const router = createBrowserRouter([
       children:[
         {
             path:"/",
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=>fetch('http://localhost:5000/jobs')
         },
         {
             path:"/login",
@@ -31,15 +36,34 @@ const router = createBrowserRouter([
         },
         {
           path:"/addAJob",
-          element:<AddAJob></AddAJob>
-        },
-        {
-          path:"/categoryJobs/:jobCategory",
-          element:<JobCards></JobCards>
+          element:<PrivateRoute><AddAJob></AddAJob></PrivateRoute>
         },
         {
           path:"/myJobs",
           element:<PrivateRoute><MyJobs></MyJobs></PrivateRoute>
+        },
+        {
+          path:"/update/:id",
+          element:<PrivateRoute><UpdateMyJob></UpdateMyJob></PrivateRoute>,
+          loader:({params})=>fetch(`http://localhost:5000/jobs/${params.id}`)
+        },
+        {
+          path:"/blogs",
+          element:<Blogs></Blogs>
+        },
+        
+        {
+          path:"/allJobs",
+          element:<AllJobs></AllJobs>
+        },
+        {
+          path:"/appliedJobs",
+          element:<PrivateRoute> <AppliedJobs></AppliedJobs> </PrivateRoute>
+        },
+        {
+          path:"/details/:id",
+          element:<PrivateRoute><DetailsJob></DetailsJob></PrivateRoute>,
+          loader:({params})=>fetch(`http://localhost:5000/jobs/${params.id}`)
         }
       ]
     },

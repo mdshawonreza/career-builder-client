@@ -35,9 +35,16 @@ const Navbar = () => {
     const navLinks = <>
         <li><NavLink to="/" className="text-base  font-medium">Home</NavLink></li>
         <li><NavLink to="/login" className="text-base font-medium">Login</NavLink></li>
-        <li><NavLink to="/register" className="text-base font-medium">Register</NavLink></li>
-        <li><NavLink to="/addAJob" className="text-base font-medium">Add A Job</NavLink></li>
+        {/* <li><NavLink to="/register" className="text-base font-medium">Register</NavLink></li> */}
+        {
+            user && <> 
+            <li><NavLink to="/addAJob" className="text-base font-medium">Add A Job</NavLink></li>
         <li><NavLink to="/myJobs" className="text-base font-medium">My Jobs</NavLink></li>
+        <li><NavLink to="/appliedJobs" className="text-base font-medium">Applied Jobs</NavLink></li>
+            </>
+        }
+        <li><NavLink to="/allJobs" className="text-base font-medium">All Jobs</NavLink></li>
+        <li><NavLink to="/blogs" className="text-base font-medium">Blogs</NavLink></li>
        
 
         </>
