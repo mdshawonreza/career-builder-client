@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Tab, TabList,  Tabs } from "react-tabs";
 import TabsMenu from "./TabsMenu";
+import { Link } from "react-router-dom";
 
 const TabsJobs = ({allCategoriesJob}) => {
 
@@ -14,9 +15,10 @@ const TabsJobs = ({allCategoriesJob}) => {
         setAllJobs(updatedJobs)
     }
     return (
-        <Tabs className="max-w-[580px] md:max-w-3xl lg:max-w-5xl mx-auto mt-10">
+        <Tabs className=" mt-10">
 
-           <TabsMenu 
+           <TabsMenu
+            
            handleFilterJob={handleFilterJob}
            allCategoriesJob={allCategoriesJob}
            setAllJobs={setAllJobs}
@@ -26,13 +28,14 @@ const TabsJobs = ({allCategoriesJob}) => {
 
 
 
-            <div className="max-w-[580px] md:max-w3xl mt-10  lg:max-w-6xl mx-auto grid grid-cols-3 gap-10">
+            <div className=" mt-16 max-w-[340px] md:max-w-3xl lg:max-w-5xl   mx-auto grid
+            grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
                 {
                     allJobs.map((job) => {
                         const { _id, photo,userName ,jobTitle,jobPostingDate,applicationDeadline,salaryRange,jobApplicantsNumber} = job
 
                         return (
-                            <div key={_id} className="mr-5 relative flex flex-col text-gray-700 bg-white shadow-md w-[340px] rounded-xl bg-clip-border">
+                            <div key={_id} className=" relative flex flex-col text-gray-700 bg-white shadow-md w-[340px] rounded-xl bg-clip-border">
                                 <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
                                     <img
                                         className="w-full h-full"
@@ -62,6 +65,7 @@ const TabsJobs = ({allCategoriesJob}) => {
                                     </p>
                                 </div>
                                 <div className="p-6 pt-0">
+                                    <Link to={`/details/${_id}`}>
                                     <button
                                         className="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                         type="button"
@@ -69,6 +73,7 @@ const TabsJobs = ({allCategoriesJob}) => {
                                     >
                                         View Details
                                     </button>
+                                    </Link>
                                 </div>
                             </div>
                         )

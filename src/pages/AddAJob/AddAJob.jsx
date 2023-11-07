@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const AddAJob = () => {
-    const {user}=useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
     const handleAddAJob = event => {
 
@@ -20,7 +20,7 @@ const AddAJob = () => {
         const jobApplicantsNumber = form.jobApplicantsNumber.value;
         const photo = form.photo.value;
 
-        const newJob = { jobTitle, userName, jobCategory, salaryRange, jobDescription, jobPostingDate,applicationDeadline,jobApplicantsNumber ,photo ,email:user.email};
+        const newJob = { jobTitle, userName, jobCategory, salaryRange, jobDescription, jobPostingDate, applicationDeadline, jobApplicantsNumber, photo, email: user.email };
 
         console.log(newJob)
         fetch('http://localhost:5000/jobs', {
@@ -73,7 +73,7 @@ const AddAJob = () => {
                 </div>
                 {/* form Job Category and Salary range row */}
                 <div className="md:flex mb-6 ">
-                    <div className="form-control md:w-1/2">
+                    {/* <div className="form-control md:w-1/2">
                         <label className="label">
                             <span className="label-text">Job Category</span>
                         </label>
@@ -81,8 +81,21 @@ const AddAJob = () => {
 
                             <input type="text" name="jobCategory" placeholder="Enter Job Category" className="input input-bordered w-full" />
                         </label>
+                    </div> */}
+                    <div className="form-control md:w-1/2">
+                    <label className="label">
+                            <span className="label-text">Job Category</span>
+                        </label>
+                    <select defaultValue={"default"} name="jobCategory" className="select select-bordered  ">
+                        <option value="default" disabled>Pic a job Category</option>
+                        <option >On Site Job</option>
+                        <option  >Remote Job</option>
+                        <option  >Hybrid Job</option>
+                        <option >Part Time</option>
+
+                    </select>
                     </div>
-                   
+
                     <div className="form-control md:ml-4 md:w-1/2">
                         <label className="label">
                             <span className="label-text">Salary range</span>
