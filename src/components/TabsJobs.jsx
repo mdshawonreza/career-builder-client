@@ -28,7 +28,7 @@ const TabsJobs = ({allCategoriesJob}) => {
 
 
 
-            <div className=" mt-16 max-w-[340px] md:max-w-3xl lg:max-w-5xl   mx-auto grid
+            <div className=" mt-16 mb-16 max-w-[340px] md:max-w-3xl lg:max-w-5xl   mx-auto grid
             grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
                 {
                     allJobs.map((job) => {
@@ -67,7 +67,7 @@ const TabsJobs = ({allCategoriesJob}) => {
                                 <div className="p-6 pt-0">
                                     <Link to={`/details/${_id}`}>
                                     <button
-                                        className="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        className="select-none btn-block  rounded-lg bg-[#192a60] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-[#192a60]/20 transition-all hover:shadow-lg hover:bg-[#192a60] focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                         type="button"
                                         data-ripple-light="true"
                                     >

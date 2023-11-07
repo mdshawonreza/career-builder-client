@@ -2,14 +2,14 @@ import logo1 from "../assets/logo1.svg"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer px-10 pt-10 bg-black text-white">
+            <footer className="footer px-10 pt-10 bg-[#121f4a] text-white">
                 <aside>
                     <img src={logo1} alt="" />
 
                 </aside>
 
             </footer>
-            <footer className="footer px-10 pt-8 pb-5  bg-black text-white">
+            <footer className="footer px-10 pt-8 pb-5  bg-[#121f4a] text-white">
                 <nav>
                     <header className="footer-title">JOBS</header>
                     <a className="link link-hover">On Site Job</a>
@@ -45,7 +45,7 @@ const Footer = () => {
                 </nav>
 
             </footer>
-            <div className="footer px-10 pt-8 pb-10  bg-black text-white flex justify-center  ">
+            <div className="footer px-10 pt-8 pb-10 bg-[#121f4a] text-white flex justify-center  ">
                 
                     <p className="">Copyright © 2023 - All right reserved by Career Builder Ltd</p>
                 
