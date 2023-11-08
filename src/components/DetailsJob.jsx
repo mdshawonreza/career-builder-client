@@ -48,7 +48,7 @@ const DetailsJob = () => {
 
         console.log(appliedPersonInfo)
 
-        fetch('http://localhost:5000/appliedJobs', {
+        fetch('https://career-builder-server.vercel.app/appliedJobs', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

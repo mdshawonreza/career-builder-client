@@ -10,7 +10,7 @@ const MyJobs = () => {
     const [jobs, setJobs] = useState([])
 
 
-    const url = `http://localhost:5000/jobs?email=${user?.email}`
+    const url = `https://career-builder-server.vercel.app/jobs?email=${user?.email}`
 
     useEffect(() => {
         fetch(url)
@@ -30,7 +30,7 @@ const MyJobs = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result)=>{
             if (result.isConfirmed){
-                fetch(`http://localhost:5000/jobs/${_id}`,{
+                fetch(`https://career-builder-server.vercel.app/jobs/${_id}`,{
                     method:"DELETE"
                 })
                 .then(res=>res.json())

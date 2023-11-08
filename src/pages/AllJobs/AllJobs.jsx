@@ -11,7 +11,7 @@ const AllJobs = () => {
     console.log(search)
 
     useEffect(() => {
-        fetch('http://localhost:5000/jobs')
+        fetch('https://career-builder-server.vercel.app/jobs')
             .then(res => res.json())
             .then(data => setAllJobs(data))
     }, [])
@@ -87,3 +87,5 @@ const AllJobs = () => {
 };
 
 export default AllJobs;
+
+

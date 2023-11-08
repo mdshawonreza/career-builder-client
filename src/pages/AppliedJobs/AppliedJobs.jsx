@@ -11,7 +11,7 @@ const AppliedJobs = () => {
 
     const [appliedJobs,setAppliedJobs]=useState([])
 
-    const url =`http://localhost:5000/appliedJobs?email=${user?.email}`
+    const url =`https://career-builder-server.vercel.app/appliedJobs?email=${user?.email}`
     useEffect(()=>{
         fetch(url)
         .then(res=>res.json())

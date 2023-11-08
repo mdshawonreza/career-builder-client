@@ -25,7 +25,7 @@ const UpdateMyJob = () => {
         const updateJob = { jobTitle, userName, jobCategory, salaryRange, jobDescription, jobPostingDate, applicationDeadline, jobApplicantsNumber, photo };
 
         console.log(updateJob)
-        fetch(`http://localhost:5000/jobs/${_id}`, {
+        fetch(`https://career-builder-server.vercel.app/jobs/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

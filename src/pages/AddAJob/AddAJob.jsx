@@ -23,7 +23,7 @@ const AddAJob = () => {
         const newJob = { jobTitle, userName, jobCategory, salaryRange, jobDescription, jobPostingDate, applicationDeadline, jobApplicantsNumber, photo, email: user.email };
 
         console.log(newJob)
-        fetch('http://localhost:5000/jobs', {
+        fetch('https://career-builder-server.vercel.app/jobs', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
