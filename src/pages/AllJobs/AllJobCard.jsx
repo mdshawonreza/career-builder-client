@@ -37,7 +37,7 @@ const AllJobCard = ({ allJob }) => {
             <td className=" text-base font-semibold">$ {salaryRange}</td>
             <th>
                 <Link to={`/details/${_id}`}>
-                    <button className="btn btn-ghost ">Details</button>
+                    <button className="btn btn-ghost btn-outline hover:bg-[#121f4a] ">Details</button>
                 </Link>
             </th>
         </tr>

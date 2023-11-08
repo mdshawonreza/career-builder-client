@@ -20,7 +20,7 @@ const AppliedJobs = () => {
 
 
     return (
-       <div className="max-w-[580px] md:max-w-3xl lg:max-w-4xl mx-auto">
+       <div className="max-w-[340px] md:max-w-3xl lg:max-w-4xl mx-auto">
          <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             {
                 appliedJobs.map(appliedJob=><AppliedJobCard key={appliedJob._id} appliedJob={appliedJob} ></AppliedJobCard>)

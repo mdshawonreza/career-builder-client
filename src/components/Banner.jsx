@@ -6,9 +6,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-xl text-white">
-                    <h1 className="mb-5 text-5xl font-bold">Unlock Your Potential</h1>
-                    <p className="mb-5">Discover Your Dream Career with Us - Explore Opportunities, Gain Insights, and Take the Next Step Towards Success</p>
-                    <div className="form-control ">
+                    <h1 className="mb-5 text-2xl md:text-5xl font-bold">Unlock Your Potential</h1>
+                    <p className="mb-5 text-sm md:text-base">Discover Your Dream Career with Us - Explore Opportunities, Gain Insights, and Take the Next Step Towards Success</p>
+                    <div className="form-control  ">
                         <div className="input-group">
                             <input type="text" placeholder="Search…" className="input input-bordered text-orange-600 font-medium w-full" />
                             <button className="btn btn-square bg-yellow-400 hover:bg-yellow-500">

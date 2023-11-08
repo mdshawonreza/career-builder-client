@@ -53,18 +53,18 @@ const MyJobs = () => {
     return (
         <div className="max-w-5xl mx-auto">
             <div>
-                <h2>myJobs {jobs.length}</h2>
+                <div className="text-center my-12"><h2 className="text-4xl font-bold pb-4 border-b-2 border-orange-500">My jobs</h2></div>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
                         <thead>
-                            <tr className="text-lg font-semibold">
+                            <tr className="text-sm md:text-lg font-semibold">
                                 <th>
                                     
                                 </th>
                                 <th>Job</th>
-                                <th>Published Person</th>
-                                <th>Application Deadline</th>
+                                {/* <th>Published Person</th> */}
+                                <th>Apply Deadline</th>
                                 <th></th>
                             </tr>
                         </thead>
