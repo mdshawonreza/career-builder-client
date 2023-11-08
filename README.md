@@ -1,8 +1,13 @@
-# React + Vite
+# Career builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project features in this project:
 
-Currently, two official plugins are available:
+- At first i create a layout route in this Career builder project and there was a fixed nav bar with 7 route which were home, login,  add a job , my jobs ,applied jobs ,all jobs ,blogs
+- In this project ,home page have a tabs menu and tabs panel there were many jobs cards ,a awesome banner ,and help section.
+- jobs card has a specific details button  and when it was clicked by a registered user than it show details in this job.
+- And add a job page have some input fields to input data for upload job and every single own published job has a updated button and a delete button.
+- if published person click this update button then he or she can update job information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live link in this project:
+
+- 
