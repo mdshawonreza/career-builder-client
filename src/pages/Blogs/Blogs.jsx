@@ -40,6 +40,16 @@ const Blogs = () => {
                         <p>NestJS is a progressive Node.js framework that utilizes TypeScript to simplify the development of scalable and maintainable server-side applications. Inspired by Angular, it offers a modular and structured approach for building web applications and APIs, with built-in support for dependency injection, decorators, and robust tooling for creating enterprise-grade projects.</p>
                     </div>
                 </div>
+                <div className="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div className="collapse-title text-xl font-medium">
+                    What is Nest JS ?
+
+                    </div>
+                    <div className="collapse-content">
+                        <p>NestJS is a progressive Node.js framework that utilizes TypeScript to simplify the development of scalable and maintainable server-side applications. Inspired by Angular, it offers a modular and structured approach for building web applications and APIs, with built-in support for dependency injection, decorators, and robust tooling for creating enterprise-grade projects.</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
