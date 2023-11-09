@@ -47,7 +47,7 @@ const Blogs = () => {
 
                     </div>
                     <div className="collapse-content">
-                        <p>NestJS is a progressive Node.js framework that utilizes TypeScript to simplify the development of scalable and maintainable server-side applications. Inspired by Angular, it offers a modular and structured approach for building web applications and APIs, with built-in support for dependency injection, decorators, and robust tooling for creating enterprise-grade projects.</p>
+                        <p>This web project features a fixed navigation bar with routes for Home, Login, Add a Job, My Jobs, Applied Jobs, All Jobs, and Blogs. The Home page has tabs, job cards, a banner, and help section. Job cards lead to detailed job pages. Users can add jobs with an update and delete feature. User authentication is included, and data is stored in a database. The project uses HTML, CSS, JavaScript, and a back-end framework to handle server-side logic. It's responsive, secure, and deployable.</p>
                     </div>
                 </div>
             </div>
