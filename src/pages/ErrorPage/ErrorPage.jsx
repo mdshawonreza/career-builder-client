@@ -5,7 +5,7 @@ const ErrorPage = () => {
     return (
         <div className='h-screen flex  justify-center items-center'>
             <div className="text-center">
-                <h2 className="text-5xl font-bold mb-3">Oops <span className="text-5xl font-extrabold text-pink-600">!!</span></h2>
+                <h2 className="text-5xl font-bold mb-3">Oops <span className="text-5xl font-extrabold text-[#121f4a]">!!!</span></h2>
                 <p className="text-xl font-semibold mt-2  ">{error.statusText || error.message}</p>
                 {
                     error.status === 404 && <div>
