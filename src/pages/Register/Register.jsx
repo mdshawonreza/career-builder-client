@@ -77,7 +77,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text font-medium text-base">Email</span>
                                 </label>
-                                <input type="email" placeholder="Email" name="email" className="input input-bordered" required />
+                                <input type="email" placeholder="Your Email" name="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
