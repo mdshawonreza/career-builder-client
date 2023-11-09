@@ -29,9 +29,9 @@ const MyJobRow = ({ job, handleDelete }) => {
                     </div>
                 </div>
             </td>
-            {/* <td>
+            <td>
                 <h2 className="text-sm md:text-lg ">{userName}</h2>
-            </td> */}
+            </td>
             <td className="font-semibold">{applicationDeadline}</td>
             <th>
                 <Link to={`/update/${_id}`}>

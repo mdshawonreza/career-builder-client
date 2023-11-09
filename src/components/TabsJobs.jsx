@@ -48,17 +48,17 @@ const TabsJobs = ({allCategoriesJob}) => {
                                     <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                                         {jobTitle}
                                     </h5>
-                                    <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                                    <p className="block font-sans font-semibold antialiased  leading-relaxed text-inherit">
                                     Published by {userName}
                                     </p>
                                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                                    Job Posting Date : {jobPostingDate}
+                                    <span className="text-black font-semibold">Job Posting Date :</span> {jobPostingDate}
                                     </p>
                                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                                    Application Deadline : {applicationDeadline}
+                                    <span className="text-black font-semibold">Application Deadline :</span> {applicationDeadline}
                                     </p>
                                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                                    Salary range : {salaryRange}
+                                    <span className="text-black font-semibold">Salary range :</span>$ <span className="font-bold "> {salaryRange}</span>
                                     </p>
                                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
                                     Job Applicants Number : {jobApplicantsNumber}
@@ -67,7 +67,7 @@ const TabsJobs = ({allCategoriesJob}) => {
                                 <div className="p-6 pt-0">
                                     <Link to={`/details/${_id}`}>
                                     <button
-                                        className="select-none btn-block  rounded-lg bg-[#192a60] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-[#192a60]/20 transition-all hover:shadow-lg hover:bg-[#192a60] focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        className="select-none btn-block  rounded-lg bg-gradient-to-tr  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-[#192a60]/20 transition-all hover:shadow-lg hover:bg-gradient-to-tr from-[#121f4a] to-[#143192] focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                         type="button"
                                         data-ripple-light="true"
                                     >

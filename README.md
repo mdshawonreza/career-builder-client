@@ -10,4 +10,4 @@
 
 ## Live link in this project:
 
-- https://654bc9e8807a731806e5d9bc--darling-conkies-36c865.netlify.app/
+- https://career-builder-6a1fb.web.app

@@ -51,9 +51,9 @@ const MyJobs = () => {
     }
 
     return (
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto mb-10">
             <div>
-                <div className="text-center my-12"><h2 className="text-4xl font-bold pb-4 border-b-2 border-orange-500">My jobs</h2></div>
+                <div className="text-center max-w-[200px] md:max-w-2xl mx-auto my-12"><h2 className="text-2xl md:text-4xl font-bold pb-4 border-b-2 border-orange-500">My jobs</h2></div>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
@@ -63,7 +63,7 @@ const MyJobs = () => {
                                     
                                 </th>
                                 <th>Job</th>
-                                {/* <th>Published Person</th> */}
+                                <th>Published Person</th>
                                 <th>Apply Deadline</th>
                                 <th></th>
                             </tr>

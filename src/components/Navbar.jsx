@@ -38,15 +38,14 @@ const Navbar = () => {
         {/* <li><NavLink to="/register" className="text-base font-medium">Register</NavLink></li> */}
         {
             user && <> 
-            <li><NavLink to="/addAJob" className="text-base font-medium">Add A Job</NavLink></li>
+            <li><NavLink to="/addAJob" className="text-base font-medium">Add Job</NavLink></li>
         <li><NavLink to="/myJobs" className="text-base font-medium">My Jobs</NavLink></li>
         <li><NavLink to="/appliedJobs" className="text-base font-medium">Applied Jobs</NavLink></li>
             </>
         }
         <li><NavLink to="/allJobs" className="text-base font-medium">All Jobs</NavLink></li>
         <li><NavLink to="/blogs" className="text-base font-medium">Blogs</NavLink></li>
-       
-
+    
         </>
 
 
@@ -77,14 +76,14 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="navbar-end flex flex-col-reverse md:flex-row">
-                <div className=" flex items-center">
+            <div className="navbar-end flex y">
+                <div className=" ">
                     {
                         user && <img className="rounded-full w-5 md:w-9 mr-1    " src={user?.photoURL} alt="" />
                     }
-                    {
+                    {/* {
                         user && <span className="mr-3 text-xs md:text-sm font-medium">{user?.displayName}</span>
-                    }
+                    } */}
                 </div>
                 <div className="flex justify-around items-center">
                     <label className="swap swap-rotate pr-2 ">

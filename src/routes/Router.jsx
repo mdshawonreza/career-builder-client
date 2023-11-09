@@ -12,6 +12,8 @@ import Blogs from "../pages/Blogs/Blogs";
 import AllJobs from "../pages/AllJobs/AllJobs";
 import AppliedJobs from "../pages/AppliedJobs/AppliedJobs";
 import DetailsJob from "../components/DetailsJob";
+import ContactUs from "../components/Feedback";
+import Feedback from "../components/Feedback";
 
 
 
@@ -64,6 +66,10 @@ const router = createBrowserRouter([
           path:"/details/:id",
           element:<PrivateRoute><DetailsJob></DetailsJob></PrivateRoute>,
           loader:({params})=>fetch(`https://career-builder-server.vercel.app/jobs/${params.id}`)
+        },
+        {
+          path:"/feedback",
+          element:<Feedback></Feedback>
         }
       ]
     },
