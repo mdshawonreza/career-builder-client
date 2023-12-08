@@ -15,10 +15,10 @@ const Feedback = () => {
     };
     return (
         <div className=' '>
-            <div className='bg-base-300 rounded-md max-w-5xl mx-auto my-16 p-16'>
-                <div className="relative flex flex-col text-gray-700 bg-white shadow-md w-[500px] rounded-xl bg-clip-border max-w-5xl mx-auto">
+            <div className='bg-base-300 rounded-md max-w-[380px] md:max-w-3xl lg:max-w-5xl mx-auto my-16 p-16'>
+                <div className="relative flex flex-col text-gray-700 bg-white shadow-md md:w-[500px] rounded-xl bg-clip-border max-w-5xl mx-auto">
                     <div className="relative grid mx-4 mb-4 -mt-6 overflow-hidden text-white shadow-lg h-28 place-items-center rounded-xl bg-gradient-to-tr from-[#121f4a] to-[#2d51c7] bg-clip-border shadow-[#516196]">
-                        <h3 className="block font-sans text-3xl antialiased font-semibold leading-snug tracking-normal text-white">
+                        <h3 className="block font-sans text-lg md:text-3xl antialiased font-semibold leading-snug tracking-normal text-white">
                             Send Your Feedback
                         </h3>
                     </div>
@@ -44,7 +44,7 @@ const Feedback = () => {
                                     Your Email
                                 </label>
                             </div>
-                            <div className="relative h-40 w-full min-w-[200px]">
+                            <div className="relative h-20 md:h-40 w-full min-w-[200px]">
                                 <textarea
                                     name="message"
                                     className="w-full h-full px-3 py-3 font-sans text-sm font-normal transition-all bg-transparent border rounded-md peer border-blue-gray-200 border-t-transparent text-blue-gray-700 outline outline-0 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#121f4a] focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
